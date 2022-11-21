@@ -1,9 +1,13 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import "./App.css";
+import { Button } from "@mui/material";
+import { auto } from "@popperjs/core";
+import NavBar from "./components/NavBar";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <div>
+      <NavBar />
+    </div>
+  );
 }
 
 export default App;
