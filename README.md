@@ -2,7 +2,7 @@
 
 ## React for FrontEnd and SpringBoot for BackEnd
 
-## Instructions:
+## Instructions for running frontend
 
 Install dependencies
 
@@ -14,4 +14,11 @@ Run project on your local system
 
 ```
 yarn dev
+```
+
+
+
+## Instruction for running backend.
+```
+mvn spring-boot:run
 ```
