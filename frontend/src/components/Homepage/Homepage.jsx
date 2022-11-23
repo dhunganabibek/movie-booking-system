@@ -1,6 +1,6 @@
-import { Box, Hidden } from "@mui/material";
 import React from "react";
 import HeroSection from "../HeroSection/HeroSection";
+import MovieDisplay from "../MovieDisplay/MovieDisplay";
 import NavBar from "../NavBar/NavBar";
 
 function Homepage() {
@@ -8,6 +8,7 @@ function Homepage() {
     <>
       <NavBar />
       <HeroSection />
+      {/* <MovieDisplay /> */}
     </>
   );
 }
