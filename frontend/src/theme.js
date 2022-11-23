@@ -9,10 +9,13 @@ const theme = createTheme({
       main: "#edf2ff",
     },
     navbarcolor: {
-      main: "#6f42c1;",
+      main: "#933553",
     },
     white: {
       main: "#FFF",
+    },
+    buttoncolor: {
+      main: "#9457eb",
     },
   },
 });
