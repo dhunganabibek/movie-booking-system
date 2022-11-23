@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "proxy": "http://127.0.0.1:5173/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -12,11 +13,17 @@
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@fontsource/roboto": "^4.5.8",
+    "@mui/core": "^5.0.0-alpha.54",
     "@mui/icons-material": "^5.10.14",
     "@mui/material": "^5.10.14",
     "@mui/styled-engine-sc": "^5.10.14",
+    "@mui/styles": "^5.10.14",
+    "axios": "^1.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.6.0",
+    "react-router-dom": "^6.4.3",
+    "react-swipeable-views": "^0.14.0",
     "styled-components": "^5.3.6"
   },
   "devDependencies": {

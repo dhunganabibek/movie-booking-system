@@ -3,3 +3,16 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.section-center {
+  margin: 0 auto;
+  margin-top: 4rem;
+  width: 80vw;
+  height: 450px;
+  max-width: 800px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
