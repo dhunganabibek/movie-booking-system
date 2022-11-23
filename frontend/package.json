@@ -12,11 +12,14 @@
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@fontsource/roboto": "^4.5.8",
+    "@mui/core": "^5.0.0-alpha.54",
     "@mui/icons-material": "^5.10.14",
     "@mui/material": "^5.10.14",
     "@mui/styled-engine-sc": "^5.10.14",
+    "@mui/styles": "^5.10.14",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-swipeable-views": "^0.14.0",
     "styled-components": "^5.3.6"
   },
   "devDependencies": {
