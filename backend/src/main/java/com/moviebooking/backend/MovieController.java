@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 @RestController
@@ -66,10 +67,16 @@ public class MovieController {
 
 
 
-    @GetMapping("/movies")
-    public String movies(){
+    @GetMapping("/addmovies")
+    public String addMovies(){
         createMovie();
         return "all movies";
     }
 
+    @GetMapping("/getMovies")
+    public List<Movies> getMovies(){
+        List<Movies> movies = new ArrayList<>();
+        movieRepository.findAll().forEach((m) -> movies.add(m));
+        return movies;
+    }
 }
