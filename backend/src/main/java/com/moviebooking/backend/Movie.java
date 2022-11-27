@@ -7,7 +7,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table
-public class Movies {
+public class Movie {
     @Id
     private int id;
     private String image;
@@ -15,10 +15,10 @@ public class Movies {
     @Column(length = Integer.MAX_VALUE)
     private String description;
 
-    public Movies(){
+    public Movie(){
 
     }
-    public Movies(int id, String image, String title, String description) {
+    public Movie(int id, String image, String title, String description) {
         this.id = id;
         this.image = image;
         this.title = title;
