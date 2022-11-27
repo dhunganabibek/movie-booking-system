@@ -5,6 +5,7 @@ import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import { Box } from "@mui/system";
+import { Button } from "@mui/material";
 
 export default function MovieCard({ title, image, description }) {
   return (
@@ -25,10 +26,20 @@ export default function MovieCard({ title, image, description }) {
         image={image}
         alt={`${title}-movie`}
       />
-      <CardContent>
+      <CardContent
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+          height: "100%",
+        }}
+      >
         <Typography variant="body2" color="text.secondary">
           {description}
         </Typography>
+        <Button variant="contained" href="/buyticket">
+          Buy Ticket
+        </Button>
       </CardContent>
     </Card>
   );

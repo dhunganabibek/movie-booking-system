@@ -45,6 +45,7 @@ function HeroSection() {
               width: "200px",
               borderRadius: "20px",
             }}
+            href="/movies"
           >
             <Stack flexDirection="row" gap={2}>
               <FaPlay color="#ffffe0" size="35px" />

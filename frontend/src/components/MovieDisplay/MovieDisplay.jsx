@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import MovieCard from "../MovieCard/MovieCard";
 import axios from "axios";
 import { Box } from "@mui/system";
+import { Button } from "@mui/material";
 
 export default function MovieDisplay() {
   const [movies, setMovies] = useState([]);
@@ -29,12 +30,24 @@ export default function MovieDisplay() {
     >
       {movies.map((movie) => {
         return (
-          <MovieCard
-            key={movie.id}
-            title={movie.title}
-            image={movie.image}
-            description={movie.description}
-          />
+          <>
+            {/* <Box
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                flexDirection: "column",
+                gap: 1,
+              }}
+            > */}
+            <MovieCard
+              key={movie.id}
+              title={movie.title}
+              image={movie.image}
+              description={movie.description}
+            />
+
+            {/* </Box> */}
+          </>
         );
       })}
     </Box>
