@@ -30,24 +30,13 @@ export default function MovieDisplay() {
     >
       {movies.map((movie) => {
         return (
-          <>
-            {/* <Box
-              sx={{
-                display: "flex",
-                justifyContent: "center",
-                flexDirection: "column",
-                gap: 1,
-              }}
-            > */}
+          <div key={movie.id}>
             <MovieCard
-              key={movie.id}
               title={movie.title}
               image={movie.image}
               description={movie.description}
             />
-
-            {/* </Box> */}
-          </>
+          </div>
         );
       })}
     </Box>

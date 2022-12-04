@@ -6,6 +6,8 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
+import LiveTvIcon from "@mui/icons-material/LiveTv";
+import Logout from "../../Logout/Logout";
 
 export default function NavBar() {
   return (
@@ -22,19 +24,26 @@ export default function NavBar() {
             edge="start"
             color="white"
             aria-label="menu"
-            sx={{ mr: 2 }}
+            sx={{ mr: 1 }}
           >
-            <MenuIcon />
+            <LiveTvIcon />
           </IconButton>
           <Typography
             color="#FFF"
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1 }}
+            sx={{
+              flexGrow: 1,
+              fontFamily: "Helvetica",
+              fontWeight: 500,
+            }}
           >
-            GopiKrishna
+            Gopi Krishna
           </Typography>
-          <Button color="white">Login</Button>
+          <Button color="white" href="/login">
+            Login
+          </Button>
+          <Logout />
         </Toolbar>
       </AppBar>
     </Box>
