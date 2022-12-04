@@ -1,9 +1,19 @@
 import { Button, Stack, Typography } from "@mui/material";
 import { Box } from "@mui/system";
-import React from "react";
+import { useRef } from "react";
 import heroimage from "../../assets/popcorn.avif";
 import { FaPlay } from "react-icons/fa";
+import MovieDisplay from "../MovieDisplay/MovieDisplay";
+
 function HeroSection() {
+  const moviesRef = useRef(null);
+  function handleClick() {
+    moviesRef.current.scrollIntoView({
+      behavior: "smooth",
+      block: "nearest",
+      inline: "start",
+    });
+  }
   return (
     <>
       <Box
@@ -45,7 +55,7 @@ function HeroSection() {
               width: "200px",
               borderRadius: "20px",
             }}
-            href="/movies"
+            onClick={handleClick}
           >
             <Stack flexDirection="row" gap={2}>
               <FaPlay color="#ffffe0" size="35px" />
@@ -56,6 +66,9 @@ function HeroSection() {
           </Button>
         </Box>
       </Box>
+      <div ref={moviesRef}>
+        <MovieDisplay />
+      </div>
     </>
   );
 }
