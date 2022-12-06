@@ -1,4 +1,4 @@
-import { Button, TextField } from "@mui/material";
+import { Button, TextField, Typography } from "@mui/material";
 import { Box, Stack } from "@mui/system";
 import React, { useRef, useState } from "react";
 
@@ -13,46 +13,68 @@ function BuyTicket() {
     <Box sx={{
       backgroundColor:"white"
     }}>
-      <Stack flexDirection="column" py="200px" px="30%" gap={5}>
-      <Typography>
+      <Stack flexDirection="column" py="20px" px="30%" gap={5}>
+
+      <Typography variant="h2">
         User Information
       </Typography>
+
+      <Stack>
+        <Typography variant="h6">
+          Name
+        </Typography>
+        <TextField
+            id="outlined-basic"
+            variant="outlined"
+            onChange={(event) => {
+              setUserInfo({ ...userInfo, name: event.target.value });
+            }}
+          />
+      </Stack>
+
+      <Stack>
+        <Typography variant="h6">
+          Email
+        </Typography>
         <TextField
           id="outlined-basic"
-          label="Name"
-          variant="outlined"
-          onChange={(event) => {
-            setUserInfo({ ...userInfo, name: event.target.value });
-          }}
-        />
-        <TextField
-          id="outlined-basic"
-          label="Email"
+          
           variant="outlined"
           onChange={(event) => {
             setUserInfo({ ...userInfo, email: event.target.value });
           }}
         />
+      </Stack>
+
+      <Stack>
+        <Typography variant="h6">
+          Number of Tickets
+        </Typography>
         <TextField
           id="outlined-basic"
-          label="No. of Tickets"
           variant="outlined"
           onChange={(event) => {
             setUserInfo({ ...userInfo, noofticket: event.target.value });
           }}
         />
+      </Stack>
 
+      <Stack>
+        <Typography variant="h6">
+          Location
+        </Typography>
         <TextField
           id="outlined-basic"
-          label="Location"
           variant="outlined"
           onChange={(event) => {
             setUserInfo({ ...userInfo, location: event.target.value });
           }}
         />
-        <Button variant="contained" onClick={buyTicket}>
+      </Stack>
+        <Button variant="contained" onClick={buyTicket} size="large" href="/printticket">
           Submit
         </Button>
+        
       </Stack>
     </Box>
   );

@@ -3,7 +3,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MovieDisplay from "./components/MovieDisplay/MovieDisplay";
 import Login from "./components/Login/Login";
 import BuyTicket from "./components/BuyTicket/BuyTicket";
+import PrintTicket from "./components/PrintTicket/PrintTicket";
 import Signup from "./Signup/Signup";
+
 
 function App() {
   return (
@@ -15,6 +17,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/buyticket" element={<BuyTicket />} />
           <Route path="/signup" element={<Signup />}></Route>
+          <Route path="/printticket" element={<PrintTicket />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

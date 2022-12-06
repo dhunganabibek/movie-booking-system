@@ -69,7 +69,7 @@ function Login() {
         {errors.password && errors.password.length > 8 && (
           <p>Password must be 8 characters</p>
         )}
-        <Button href="/" color="success" variant="contained">Submit</Button>
+        <Button href="/movies" color="success" variant="contained">Submit</Button>
         <div style={{ display: "flex", gap: "20px", justifyContent: "center" }}>
           <h5 style={{ font: "Segoe UI", color: "#fff" }}>Need an Account? </h5>
           <Link href="/signup" underline="always" variant="body2">
