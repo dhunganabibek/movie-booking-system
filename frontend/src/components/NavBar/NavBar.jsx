@@ -40,10 +40,6 @@ export default function NavBar() {
           >
             Gopi Krishna
           </Typography>
-          <Button color="white" href="/login">
-            Login
-          </Button>
-          <Logout />
         </Toolbar>
       </AppBar>
     </Box>

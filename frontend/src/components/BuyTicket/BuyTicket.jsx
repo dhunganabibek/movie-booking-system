@@ -8,9 +8,15 @@ function BuyTicket() {
   const buyTicket = function () {
     console.log(userInfo);
   };
+  
   return (
-    <Box>
-      <Stack flexDirection="column" py="50px" px="30%" gap={5}>
+    <Box sx={{
+      backgroundColor:"white"
+    }}>
+      <Stack flexDirection="column" py="200px" px="30%" gap={5}>
+      <Typography>
+        User Information
+      </Typography>
         <TextField
           id="outlined-basic"
           label="Name"

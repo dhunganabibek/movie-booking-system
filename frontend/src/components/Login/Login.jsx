@@ -1,4 +1,4 @@
-import { Link, Typography } from "@mui/material";
+import { Button, Link, Typography } from "@mui/material";
 import {
   onAuthStateChanged,
   signInWithEmailAndPassword,
@@ -25,8 +25,9 @@ function Login() {
     watch,
     formState: { errors },
   } = useForm();
-  const onSubmit = (event) => {
+  const onSubmit = () => {
     login();
+    
   };
   const email = watch("userName", false);
   const password = watch("password", false);
@@ -68,7 +69,7 @@ function Login() {
         {errors.password && errors.password.length > 8 && (
           <p>Password must be 8 characters</p>
         )}
-        <input type="submit" />
+        <Button href="/" color="success" variant="contained">Submit</Button>
         <div style={{ display: "flex", gap: "20px", justifyContent: "center" }}>
           <h5 style={{ font: "Segoe UI", color: "#fff" }}>Need an Account? </h5>
           <Link href="/signup" underline="always" variant="body2">

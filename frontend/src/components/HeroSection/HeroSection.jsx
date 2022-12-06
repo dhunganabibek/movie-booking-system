@@ -55,7 +55,7 @@ function HeroSection() {
               width: "200px",
               borderRadius: "20px",
             }}
-            onClick={handleClick}
+            href="/movies"
           >
             <Stack flexDirection="row" gap={2}>
               <FaPlay color="#ffffe0" size="35px" />
@@ -64,11 +64,26 @@ function HeroSection() {
               </Typography>
             </Stack>
           </Button>
+          <Button
+            size="xlarge"
+            variant="contained"
+            color="navbarcolor"
+            sx={{
+              mt: 5,
+              height: "70px",
+              width: "200px",
+              borderRadius: "20px",
+            }}
+            href="/login"
+          >
+            <Stack flexDirection="row" gap={2}>
+              <Typography variant="h5" color="#fff">
+                Login
+              </Typography>
+            </Stack>
+          </Button>
         </Box>
       </Box>
-      <div ref={moviesRef}>
-        <MovieDisplay />
-      </div>
     </>
   );
 }

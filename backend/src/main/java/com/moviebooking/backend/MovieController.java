@@ -42,22 +42,22 @@ public class MovieController {
     Movie movie3 = new Movie();
     movie3.setId(3);
     movie3.setImage(
-      "https://www.cinemark.com/media/76000284/medium-avatar-the-way-of-water-poster.jpg"
+      "https://images.fandango.com/ImageRenderer/200/0/redesign/static/img/default_poster.png/0/images/masterrepository/Fandango/219625/tgmdomonlinedigitalkeyartt-cruisestandingjetv10.jpg"
     );
     movie3.setDescription(
-      "Set more than a decade after the events of the first film, “Avatar The Way of Water” begins to tell the story of the Sully family (Jake, Neytiri and their kids), the trouble that follows them, the lengths they go to keep each other safe, the battles they fight to stay alive and the tragedies they endure."
+      "After more than thirty years of service as one of the Navy’s top aviators, Pete “Maverick” Mitchell (Tom Cruise) is where he belongs, pushing the envelope as a courageous test pilot and dodging the advancement in rank that would ground him. When he finds himself training a detachment"
     );
-    movie3.setTitle("Avatar2");
+    movie3.setTitle("Top Gun Maverick");
 
     Movie movie4 = new Movie();
     movie4.setId(4);
     movie4.setImage(
-      "https://www.cinemark.com/media/76000284/medium-avatar-the-way-of-water-poster.jpg"
+      "https://images.fandango.com/ImageRenderer/200/0/redesign/static/img/default_poster.png/0/images/masterrepository/Fandango/228129/TM_1Sheet_Payoff_27x40_wTYPE.jpg"
     );
     movie4.setDescription(
       "Set more than a decade after the events of the first film, “Avatar The Way of Water” begins to tell the story of the Sully family (Jake, Neytiri and their kids), the trouble that follows them, the lengths they go to keep each other safe, the battles they fight to stay alive and the tragedies they endure."
     );
-    movie4.setTitle("Avatar2");
+    movie4.setTitle("Top Gun");
 
     Movie movie5 = new Movie();
     movie5.setId(5);
@@ -67,7 +67,7 @@ public class MovieController {
     movie5.setDescription(
       "A musical version of Charles Dickens' story of a miserly misanthrope who's taken on a magical journey."
     );
-    movie5.setTitle("Avatar2");
+    movie5.setTitle("Spirited");
 
     Movie movie2 = new Movie();
     movie2.setId(2);
