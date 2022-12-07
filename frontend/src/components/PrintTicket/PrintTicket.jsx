@@ -4,6 +4,7 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
+import QRCode from "../../assets/qrcode.jpg"
 
 
 function PrintTicket() {
@@ -12,29 +13,40 @@ function PrintTicket() {
     sx={{
       backgroundColor:"#F2F2F2",
       height:"100vh",
-      px: "30%",
-      py: "10%"
+      margin: "auto",
+      display:"flex",
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center",
     }}
     >
       <Typography variant="h2">
         Ticket Information
       </Typography>
+      <Box sx={{
+        display:"flex",
+        
+      }}>
+        <Card sx={{ minWidth: 375, borderRadius: "50px", p: 5, m:5 }}>
+          <CardContent>
+            <Typography  variant="h4" gutterBottom>
+              Gopi Krishna Movie
+            </Typography>
+            <img src={QRCode}/>
+            <Typography variant="h5" component="div"  gutterBottoms>
+              Location: Lubbock
+            </Typography>
+            <Typography variant="h6"  gutterBottom>
+              Contact us: 8323106869
+            </Typography>
+            <Typography variant="h6"  gutterBottom>
+              Thank you for choosing us
+            </Typography>
+          </CardContent>
+        </Card>
+      </Box>
 
-      <Card sx={{ minWidth: 375 }}>
-      <CardContent>
-        <Typography  variant="h4" gutterBottom>
-          Gopi Krishna Movie
-        </Typography>
-        <Typography variant="h5" component="div">
-          Location
-        </Typography>
-        <Typography variant="h6" >
-          watch HD movie in a cheap price
-        </Typography>
-        <Typography variant="h6">
-        </Typography>
-      </CardContent>
-    </Card>
+      
 
     </Box>
   )
